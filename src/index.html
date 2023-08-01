@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title>Personal website prototype</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Neucha&family=Raleway:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet" />
+    <style type='text/css'>
+        body {
+            background: url(./old-paper.jpg);
+            background: url(./leafs.jpg);
+            background-size: cover;
+            font-family: 'Raleway', sans-serif;
+            font-size: 12pt;
+        }
+
+        div.ds-grid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+            width: 100%;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        h1 {
+            max-width: 95%;
+            width: 800px;
+            background: transparent;
+            text-align: left;
+            font-family: 'Delius', cursive;
+            margin: 0 0 -16px 0;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: 'Delius', cursive;
+            margin: 0 0 16px 0;
+        }
+
+        div.ds-card {
+            background-color: rgb(255, 255, 255, 0.9);
+            max-width: 95%;
+            width: 800px;
+            box-shadow: inset rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        div.ds-grid-horizontal {
+            display: flex;
+            align-items: stretch;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        div.ds-grid-horizontal>div {
+            flex-grow: 1;
+        }
+
+        div.ds-grid-cell-no-grow {
+            flex-grow: 0 !important;
+            flex-shrink: 0 !important;
+        }
+
+        div.ds-profile-picture {
+            width: 192px;
+        }
+
+        div.ds-profile-picture>img {
+            max-width: 100%;
+            mix-blend-mode: multiply;
+            border: 0;
+        }
+
+        div.ds-info {
+            padding: 16px;
+        }
+
+        div.ds-grid-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        div.ds-icon>span {
+            padding: 0 10px 0 0;
+        }
+
+        span.material-symbols-outlined {
+            font-size: 16pt !important;
+        }
+
+        div.ds-profiles>div {
+            padding: 25px;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+
+        div.ds-profiles>div>img {
+            max-width: 45%;
+        }
+
+        div.ds-profiles>div>p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='ds-grid'>
+
+        <h1>about me</h1>
+        <div class='ds-card'>
+            <div class='ds-grid-horizontal'>
+                <div class="ds-grid-cell-no-grow ds-profile-picture">
+                    <img src="profile.jpg" />
+                </div>
+                <div class="ds-info ds-grid-vertical">
+                    <h2>Daryl Stark</h2>
+                    <div class="ds-grid-horizontal">
+                        <div class="ds-grid-cell-no-grow ds-icon">
+                            <span class="material-symbols-outlined">apartment</span>
+                        </div>
+                        <div>DevOps engineer at Integreater and Routz</div>
+                    </div>
+                    <div class="ds-grid-horizontal">
+                        <div class="ds-grid-cell-no-grow ds-icon">
+                            <span class="material-symbols-outlined">assignment</span>
+                        </div>
+                        <div>Engineer at High Tech Campus Eindhoven</div>
+                    </div>
+                    <div class="ds-grid-horizontal">
+                        <div class="ds-grid-cell-no-grow ds-icon">
+                            <span class="material-symbols-outlined">home_pin</span>
+                        </div>
+                        <div>Culemborg, The Netherlands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>online profiles</h1>
+        <div class='ds-card'>
+            <div class="ds-grid-horizontal ds-profiles">
+                <div class="ds-grid-vertical">
+                    <img src="linkedin.png" />
+                    <p>LinkedIn</p>
+                </div>
+                <div class="ds-grid-vertical">
+                    <img src="certificate.png" />
+                    <p>Credly</p>
+                </div>
+                <div class="ds-grid-vertical">
+                    <img src="github.png" />
+                    <p>GitHub</p>
+                </div>
+                <div class="ds-grid-vertical">
+                    <img src="medium.png" />
+                    <p>Medium</p>
+                </div>
+                <div class="ds-grid-vertical">
+                    <img src="mastodon.png" />
+                    <p>Mastodon</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
