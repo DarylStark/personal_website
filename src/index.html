@@ -2,6 +2,11 @@
 
 <head>
     <title>Personal website prototype</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible'
+        content='IE=edge'>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1.0'>
     <script src="https://kit.fontawesome.com/a076d05399.js"
         crossorigin="anonymous"></script>
     <link rel="preconnect"
@@ -14,12 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet" />
     <style type='text/css'>
+        html {
+            width: 100%;
+        }
+
         body {
-            background: url(./old-paper.jpg);
             background: url(./leafs.jpg);
             background-size: cover;
             font-family: 'Raleway', sans-serif;
             font-size: 12pt;
+            width: 100%;
         }
 
         div.ds-grid {
@@ -28,6 +37,7 @@
             justify-content: center;
             min-height: 100%;
             width: 100%;
+            max-width: 100%;
             flex-direction: column;
             gap: 24px;
         }
